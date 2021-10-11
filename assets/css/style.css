@@ -13,6 +13,12 @@ html{
 3.mau sac
 4.kieu dan
 */
+.clear{
+    clear: both;
+}
+.text-white{
+    color: white !important;
+}
 #main{
 
 }
@@ -157,6 +163,63 @@ html{
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
+}
+#content .members-list{
+    padding-top: 48px;
+   
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    /* chia deu img ra giua */
+    text-align: center;
+    
+    
+}
+#content .member-name{
+    font-size: 15px;
+    
+    
+}
+#content .member-img{
+    margin-top:15px ;
+    width: 154px;
+    border-radius: 4px;
+/* radius =bo tron` */
+}
+#content .tour-section{
+    background-color: black;
+    
+}
+.tickets-list{
+    background-color: white;
+    margin-top: 40px;
+    list-style-type: none;
+    
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: solid 1px #ddd;
+    color: #757575
+}
+.tickets-list .sold-out{
+    background-color: red;
+    padding: 4px 6px;
+    color: white;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
 }
 #footer{
 
