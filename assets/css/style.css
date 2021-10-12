@@ -221,6 +221,158 @@ html{
     line-height: 24px;
     margin-top: -3px;
 }
+/* .Place */
+
+.places-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 48px;
+    
+}
+.place-item{
+    float:left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+.place-img:hover{
+    opacity: 0.5;
+}
+.place-body{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+
+
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600
+}
+.place-time{
+    opacity: 0.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.place-description{
+    line-height: 1.4;
+
+}
+.place-buy-button{
+    padding: 11px 15px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 108px;
+    height: 38px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.place-buy-button:hover{
+    background-color: #ccc;
+    color: black;
+    border: none;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open{
+    display:flex
+}
+.modal-container {
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFacein ease .5s;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.modal-close :hover{
+    opacity: 0.5;   
+}
+.modal-header{
+    background-color: #009688;
+    height: 129px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .ti-bag{
+    margin-right: 16px;
+}
+.modal-body{
+    padding:16px;
+}
+label.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+input.modal-input {
+    font-size: 15px;
+    border: 1px #ccc solid;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+button#buy-ticket {
+    background: #009688;
+    border: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    padding: 18px;
+    text-transform: uppercase;
+}
+button#buy-ticket:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    color: black;
+    
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+
+}
+.modal-footer a{
+    color: cornflowerblue;
+}
 #footer{
 
+}
+@keyframes modalFacein{
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
